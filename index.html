@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -427,154 +427,254 @@
     </section>
     <!-- ------------------------------Skills section ends here------------------------------- -->
 
-    <section id="portfolio" class="page-section">
-      <div class="mm2">
-        <div class="text-center">
-          <h3 class="text-uppercase fw-900 display-4 pb-5">My Projects</h3>
+    <section id="portfolio" class="page-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h3 class="text-uppercase fw-bold display-5 mb-3">My Projects</h3>
+          <div
+            class="mx-auto bg-primary"
+            style="height: 4px; width: 60px"
+          ></div>
         </div>
 
-        <div class="container mb-5">
-          <div class="row">
-            <div class="col-md-6 col-lg-4 tablet-lg-top-30">
-              <div class="card my-3 shadow-sm">
-                <div class="p-4 d-flex flex-column">
-                  <!-- Project Thumbnail -->
-                  <div class="mb-3 text-center">
-                    <img
-                      src="img/cv-ai.svg"
-                      alt="AI StoryCrafters App Thumbnail"
-                      class="img-fluid"
-                      style="max-height: 120px; object-fit: contain"
-                    />
-                  </div>
+        <div class="row g-4 justify-content-center">
+          <!-- IoT Bridge -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden"
+            >
+              <div
+                class="p-4 bg-light d-flex align-items-center justify-content-center"
+                style="height: 180px"
+              >
+                <img
+                  src="img/IoT-Bridge.png"
+                  alt="IoT Bridge Thumbnail"
+                  class="img-fluid"
+                  style="max-height: 140px; object-fit: contain"
+                />
+              </div>
 
-                  <!-- Project Title -->
-                  <h4 class="pb-2 fw-semibold text-center">cv-ai</h4>
-
-                  <!-- Category -->
-                  <div
-                    class="d-flex small pb-3 justify-content-center text-body-tertiary"
+              <div class="card-body d-flex flex-column p-4">
+                <h4 class="card-title fw-bold text-dark mb-1">IoT Bridge</h4>
+                <div class="mb-3">
+                  <span
+                    class="badge rounded-pill bg-primary bg-opacity-10 text-primary px-3"
+                    >IoT Ecosystem</span
                   >
-                    <span class="badge bg-secondary">Web Apps</span>
-                  </div>
+                </div>
 
-                  <!-- Description -->
-                  <p class="pb-3 text-black-50">
-                    AI-powered CV generator that helps users automatically
-                    create professional CVs. Built using Next.js, TypeScript,
-                    Groq API, and deployed on Vercel.
+                <div class="card-text text-secondary mb-4 small">
+                  <p class="mb-3 text-dark fw-medium">
+                    An IoT ecosystem designed to minimize fish crop failure
+                    through real-time water quality monitoring.
                   </p>
+                  <ul class="list-unstyled mb-0">
+                    <li class="mb-2 d-flex align-items-start">
+                      <span class="me-2 text-primary">•</span>
+                      <span
+                        >Managed with <strong>Agile Scrum</strong> for iterative
+                        and timely feature delivery.</span
+                      >
+                    </li>
+                    <li class="mb-2 d-flex align-items-start">
+                      <span class="me-2 text-primary">•</span>
+                      <span
+                        >Architected a modular <strong>NestJS</strong> backend
+                        with <strong>MQTT</strong> for low-latency
+                        transmission.</span
+                      >
+                    </li>
+                    <li class="d-flex align-items-start">
+                      <span class="me-2 text-primary">•</span>
+                      <span
+                        >Developed multi-platform interfaces using
+                        <strong>Next.js</strong> and
+                        <strong>React Native</strong>.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
 
-                  <!-- Buttons -->
-                  <div class="mt-auto">
+                <div class="mt-auto d-grid gap-2">
+                  <div class="d-flex gap-2">
                     <a
-                      href="https://github.com/valentinov8060/cv-ai"
+                      href="https://github.com/orgs/iot-bridge-repository/repositories"
                       target="_blank"
-                      class="btn btn-sm btn-dark"
-                      >Repository</a
+                      class="btn btn-outline-dark btn-sm w-100 fw-medium"
                     >
+                      <i class="bi bi-github"></i> Repository
+                    </a>
                     <a
-                      href="https://cvaibuilder.vercel.app/"
+                      href="https://iot-bridge-frontend.vercel.app"
                       target="_blank"
-                      class="btn btn-sm btn-dark"
-                      >Link to website</a
+                      class="btn btn-dark btn-sm w-100 fw-medium"
                     >
+                      Website
+                    </a>
                   </div>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.milano.sheva.iotbridgemobile"
+                    target="_blank"
+                    class="btn btn-primary btn-sm fw-medium"
+                  >
+                    <i class="bi bi-google-play"></i> Google Play Store
+                  </a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="col-md-6 col-lg-4 tablet-lg-top-30">
-              <div class="card my-3 shadow-sm">
-                <div class="p-4 d-flex flex-column">
-                  <!-- Project Thumbnail -->
-                  <div class="mb-3 text-center">
-                    <img
-                      src="img/AI-StoryCrafters-App.png"
-                      alt="AI StoryCrafters App Thumbnail"
-                      class="img-fluid"
-                      style="max-height: 120px; object-fit: contain"
-                    />
-                  </div>
+          <!-- MQTT Link -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden"
+            >
+              <div
+                class="p-4 bg-light d-flex align-items-center justify-content-center"
+                style="height: 180px"
+              >
+                <img
+                  src="img/MQTT-Link.png"
+                  alt="MQTT Link Thumbnail"
+                  class="img-fluid"
+                  style="max-height: 140px; object-fit: contain"
+                />
+              </div>
 
-                  <!-- Project Title -->
-                  <h4 class="pb-2 fw-semibold text-center">
-                    AI StoryCrafters App
-                  </h4>
-
-                  <!-- Category -->
-                  <div
-                    class="d-flex small pb-3 justify-content-center text-body-tertiary"
+              <div class="card-body d-flex flex-column p-4">
+                <h4 class="card-title fw-bold text-dark mb-1">MQTT Link</h4>
+                <div class="mb-3">
+                  <span
+                    class="badge rounded-pill bg-primary bg-opacity-10 text-primary px-3"
+                    >Developer Tool</span
                   >
-                    <span class="badge bg-secondary">Mobile Apps</span>
-                  </div>
+                  <span
+                    class="badge rounded-pill bg-success bg-opacity-10 text-success px-3"
+                    >Published</span
+                  >
+                </div>
 
-                  <!-- Description -->
-                  <p class="pb-3 text-black-50">
-                    Android application for generating AI-assisted stories.
-                    Built with Expo React Native and integrated with the Groq
-                    API for fast and creative text generation.
+                <div class="card-text text-secondary mb-4 small">
+                  <p class="mb-3 text-dark fw-medium">
+                    A professional mobile utility designed for developers to
+                    manage and validate MQTT communications.
                   </p>
+                  <ul class="list-unstyled mb-0">
+                    <li class="mb-2 d-flex align-items-start">
+                      <span class="me-2 text-primary">•</span>
+                      <span
+                        >Features <strong>Publish-Subscribe</strong> and dynamic
+                        broker connection management.</span
+                      >
+                    </li>
+                    <li class="mb-2 d-flex align-items-start">
+                      <span class="me-2 text-primary">•</span>
+                      <span
+                        >Streamlines <strong>IoT debugging</strong> with
+                        real-time status monitoring.</span
+                      >
+                    </li>
+                    <li class="d-flex align-items-start">
+                      <span class="me-2 text-primary">•</span>
+                      <span
+                        >Developed with <strong>React Native (Expo)</strong> and
+                        published on <strong>Google Play Store</strong>.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
 
-                  <!-- Buttons -->
-                  <div class="mt-auto">
+                <div class="mt-auto d-grid gap-2">
+                  <div class="d-flex gap-2">
                     <a
-                      href="https://github.com/valentinov8060/AIStoryCrafters"
+                      href="https://play.google.com/store/apps/details?id=com.valentinovsoftware.mqttlink"
                       target="_blank"
-                      class="btn btn-sm btn-dark"
+                      class="btn btn-primary btn-sm w-100 fw-medium"
                     >
-                      Repository
+                      <i class="bi bi-google-play"></i> Play Store
                     </a>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="col-md-6 col-lg-4 tablet-lg-top-30">
-              <div class="card my-3 shadow-sm">
-                <div class="p-4 d-flex flex-column">
-                  <!-- Project Thumbnail -->
-                  <div class="mb-3 text-center">
-                    <img
-                      src="img/IoT-Bridge.png"
-                      alt="AI StoryCrafters App Thumbnail"
-                      class="img-fluid"
-                      style="max-height: 120px; object-fit: contain"
-                    />
-                  </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden"
+            >
+              <div
+                class="p-4 bg-light d-flex align-items-center justify-content-center"
+                style="height: 180px"
+              >
+                <img
+                  src="img/n8n.png"
+                  alt="Autonomous Newsroom Thumbnail"
+                  class="img-fluid"
+                  style="max-height: 140px; object-fit: contain"
+                />
+              </div>
 
-                  <!-- Project Title -->
-                  <h4 class="pb-2 fw-semibold text-center">IoT Bridge</h4>
+              <div class="card-body d-flex flex-column p-4">
+                <h4 class="card-title fw-bold text-dark mb-1">
+                  Autonomous Economic Newsroom
+                </h4>
 
-                  <!-- Category -->
-                  <div
-                    class="d-flex small pb-3 justify-content-center text-body-tertiary"
+                <div class="mb-3">
+                  <span
+                    class="badge rounded-pill bg-warning bg-opacity-10 text-warning px-3"
+                    >AI Automation</span
                   >
-                    <span class="badge bg-secondary">IoT Apps</span>
-                  </div>
+                  <span
+                    class="badge rounded-pill bg-info bg-opacity-10 text-info px-3"
+                    >In Progress</span
+                  >
+                </div>
 
-                  <!-- Description -->
-                  <p class="pb-3 text-black-50">
-                    IoT-based fish pond monitoring platform integrating
-                    real-time sensor data from ESP32 devices. Built using
-                    NestJS, Mosquitto MQTT Broker, PostgreSQL, and Next.js.
+                <div class="card-text text-secondary mb-4 small">
+                  <p class="mb-3 text-dark fw-medium">
+                    An automated news production system that generates and
+                    publishes economic insights to social media platforms.
                   </p>
 
-                  <!-- Buttons -->
-                  <div class="mt-auto">
-                    <a
-                      href="https://github.com/orgs/iot-bridge-repository/repositories"
-                      target="_blank"
-                      class="btn btn-sm btn-dark"
-                      >Repository</a
-                    >
-                    <a
-                      href="https://iot-bridge-frontend.vercel.app"
-                      target="_blank"
-                      class="btn btn-sm btn-dark"
-                      >Link to website</a
-                    >
-                  </div>
+                  <ul class="list-unstyled mb-0">
+                    <li class="mb-2 d-flex align-items-start">
+                      <span class="me-2 text-primary">•</span>
+                      <span
+                        >Orchestrating complex workflows using
+                        <strong>n8n</strong> to fetch, analyze, and summarize
+                        global economic data.</span
+                      >
+                    </li>
+                    <li class="mb-2 d-flex align-items-start">
+                      <span class="me-2 text-primary">•</span>
+                      <span
+                        >Integrating
+                        <strong>Large Language Models (LLM)</strong> for
+                        automated content generation tailored for
+                        <strong>X (Twitter)</strong> and
+                        <strong>Instagram</strong>.</span
+                      >
+                    </li>
+                    <li class="d-flex align-items-start">
+                      <span class="me-2 text-primary">•</span>
+                      <span
+                        >Developing automated scheduling and multi-platform
+                        distribution pipelines to ensure 24/7 news
+                        delivery.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mt-auto d-grid gap-2">
+                  <button
+                    class="btn btn-outline-secondary btn-sm w-100 fw-medium"
+                    disabled
+                  >
+                    <i class="bi bi-code-slash"></i> Coming Soon on
+                  </button>
                 </div>
               </div>
             </div>
