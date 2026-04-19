@@ -1,855 +1,288 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
-    <!-- Required meta tags -->
+    <!-- META -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- SEO Metadata -->
-    <title>Bill Valentinov — Software Developer Portfolio</title>
-
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0a0a0a" />
     <meta
       name="description"
-      content="Portfolio of Bill Valentinov, a software engineer specializing in web development, mobile apps, IoT backend, and AI applications. Experienced with Next.js, NestJS, React Native, TypeScript, and MQTT. Explore projects and contact for collaboration."
-    />
-    <meta
-      name="keywords"
-      content="Software Engineer, Web Developer, Mobile Developer, Next.js, React Native, NestJS, IoT Developer, JavaScript, TypeScript, Portfolio Developer Indonesia"
-    />
-    <meta name="author" content="Bill Valentinov" />
-
-    <!-- Open Graph (for social media previews) -->
-    <meta
-      property="og:title"
-      content="Bill Valentinov — Software Engineer Portfolio"
-    />
-    <meta
-      property="og:description"
-      content="Explore my projects in Web Development, Mobile Apps, IoT Systems, and AI Applications. Let's work together!"
-    />
-    <meta
-      property="og:image"
-      content="https://valentinov8060.github.io/Bill-Valentinov_Portofolio/img/foto-profil.jpg"
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://valentinov8060.github.io/Bill-Valentinov_Portofolio/"
+      content="Problem Solver & Software Developer. Build digital solutions according the future."
     />
 
-    <!--  -->
-    <link rel="icon" type="image/icon/x-icon" href="img/profile-icon.png" />
+    <title>Bill Valentinov | Portfolio</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap"
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>"
+    />
+
+    <!-- STRUCTURED DATA -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Bill Valentinov",
+        "jobTitle": "Software Developer",
+        "description": "Problem Solver & Software Developer. Build digital solutions according the future.",
+        "sameAs": [
+          "https://github.com",
+          "https://linkedin.com",
+          "https://twitter.com"
+        ],
+        "knowsAbout": [
+          "React",
+          "Next.js",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "PostgreSQL",
+          "TypeScript",
+          "Python",
+          "Docker"
+        ]
+      }
+    </script>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-    />
-    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="css/simple-lightbox.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top vv">
-      <div class="container">
-        <a class="navbar-brand fw-bolder" href="#">Bill Valentinov</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse primary-navigation"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <div class="cursor" id="cursor"></div>
+
+    <nav>
+      <a href="#" class="nav-logo">Bill<span>.</span>Valentinov</a>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <!---------------------------------------Navigation ends here---------------------------------------->
 
-    <section id="home" class="page-section">
-      <div class="text-center mm">
-        <div class="pb-3">
-          <img
-            src="img/foto-profil.jpg"
-            class="profile-pic"
-            alt="Bill Valentinov"
-          />
-        </div>
-        <h5 class="text-body-tertiary mb-0">Hi There, I'm</h5>
-        <h1 class="display-2 fw-bold">Bill Valentinov</h1>
-        <h3 class="fw-medium text-muted">
-          <span
-            class="typewrite"
-            data-period="2500"
-            data-type='[ "A Software Developer" ]'
-          >
-            <span class="wrap"></span>
-          </span>
-        </h3>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg-text">BUILD</div>
+      <h1>
+        Problem <br />
+        Solver <em>&</em><br />
+        Software <br />
+        Developer.
+      </h1>
+      <p class="hero-sub">Build digital solutions according the future.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">My Works →</a>
+        <a href="#contact" class="btn-ghost">Contact Me</a>
+      </div>
+      <div class="scroll-hint">
+        <span class="scroll-line"></span>
+        Scroll Down <span class="scroll-arrow">↓</span>
       </div>
     </section>
-    <!------------Top banner ends here--------------------->
 
-    <section id="about" class="page-section">
-      <div class="mm2">
-        <div class="text-center">
-          <h3 class="text-uppercase fw-900 display-4 pb-5">About</h3>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="nn p-4 text-center">
-                <h5 class="box-title pb-4">About me</h5>
-                <p class="lead text-black-50">
-                  Informatics Engineering graduate with strong experience in
-                  backend development, IoT device management platforms, cloud
-                  deployment, and web/mobile applications. Skilled in Node.js,
-                  NestJS, React Native, Next.js, Laravel, MQTT, and SQL/NoSQL
-                  databases. Experienced working with Agile Scrum and building
-                  end-to-end IoT architectures involving ESP32 and MQTT brokers.
-                </p>
-              </div>
-            </div>
-          </div>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-header reveal">
+        <div>
+          <p class="section-label">// Selected Work</p>
+          <h2 class="section-title">Projects</h2>
         </div>
       </div>
-    </section>
-    <!---------------------About section ends here----------------------------->
 
-    <section id="services" class="page-section">
-      <div class="mm2">
-        <div class="text-center">
-          <h3 class="text-uppercase fw-900 display-4 pb-4">Skills</h3>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-12 aos-init aos-animate">
-              <div class="p-4 text-center nn">
-                <h5 class="pb-2 ls-2">Currently I Learning</h5>
-                <p class="text-body-tertiary">
-                  HTML, CSS, JavaScript, TypeScript, Bootstrap, Node.js,
-                  Express, MySQL, MongoDB, React, React Native, A-Frame,
-                  Laravel, Next.js, Jest, Supertest, Git
-                </p>
-              </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <a
+          href="https://github.com/orgs/iot-bridge-repository/repositories"
+          target="_blank"
+          class="project-card-link"
+        >
+          <div class="project-card reveal">
+            <div class="project-num">01</div>
+            <div class="project-arrow">↗</div>
+            <div class="project-tags">
+              <span class="tag accent">Full-Stack</span>
+              <span class="tag">IoT</span>
+              <span class="tag">NestJS</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">MQTT</span>
             </div>
-
-            <div class="col-xl-12 aos-init aos-animate">
-              <div class="p-4 text-center nn">
-                <i class="lni lni-cog"></i>
-                <h5 class="pb-2 ls-2">Languages and Tools</h5>
-
-                <p class="text-body-tertiary">
-                  <a
-                    href="https://babeljs.io/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg"
-                      alt="babel"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a
-                    href="https://getbootstrap.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
-                      alt="bootstrap"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a
-                    href="https://www.w3schools.com/css/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-                      alt="css3"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a
-                    href="https://expressjs.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
-                      alt="express"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a
-                    href="https://git-scm.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
-                      alt="git"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a
-                    href="https://www.w3.org/html/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-                      alt="html5"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                      alt="javascript"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a href="https://jestjs.io" target="_blank" rel="noreferrer">
-                    <img
-                      src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg"
-                      alt="jest"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a
-                    href="https://laravel.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg"
-                      alt="laravel"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a
-                    href="https://www.mongodb.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
-                      alt="mongodb"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a
-                    href="https://www.mysql.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-                      alt="mysql"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a
-                    href="https://nextjs.org/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
-                      alt="nextjs"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a href="https://nodejs.org" target="_blank" rel="noreferrer">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
-                      alt="nodejs"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a
-                    href="https://www.php.net"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
-                      alt="php"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a
-                    href="https://postman.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
-                      alt="postman"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a
-                    href="https://reactjs.org/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-                      alt="react"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a
-                    href="https://reactnative.dev/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://reactnative.dev/img/header_logo.svg"
-                      alt="reactnative"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a
-                    href="https://www.sqlite.org/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg"
-                      alt="sqlite"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a
-                    href="https://tailwindcss.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
-                      alt="tailwind"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a
-                    href="https://www.typescriptlang.org/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-                      alt="typescript"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a href="https://vuejs.org/" target="_blank" rel="noreferrer">
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg"
-                      alt="vuejs"
-                      width="40"
-                      height="40"
-                    />
-                  </a>
-                  <a href="http://nestjs.com/" target="blank"
-                    ><img
-                      src="https://nestjs.com/img/logo-small.svg"
-                      width="40"
-                      height="40"
-                      alt="Nest Logo"
-                  /></a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ------------------------------Skills section ends here------------------------------- -->
-
-    <section id="portfolio" class="page-section py-5">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h3 class="text-uppercase fw-bold display-5 mb-3">My Projects</h3>
-          <div
-            class="mx-auto bg-primary"
-            style="height: 4px; width: 60px"
-          ></div>
-        </div>
-
-        <div class="row g-4 justify-content-center">
-          <!-- IoT Bridge -->
-          <div class="col-md-6 col-lg-4">
-            <div
-              class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden"
-            >
-              <div
-                class="p-4 bg-light d-flex align-items-center justify-content-center"
-                style="height: 180px"
-              >
-                <img
-                  src="img/IoT-Bridge.png"
-                  alt="IoT Bridge Thumbnail"
-                  class="img-fluid"
-                  style="max-height: 140px; object-fit: contain"
-                />
-              </div>
-
-              <div class="card-body d-flex flex-column p-4">
-                <h4 class="card-title fw-bold text-dark mb-1">IoT Bridge</h4>
-                <div class="mb-3">
-                  <span
-                    class="badge rounded-pill bg-primary bg-opacity-10 text-primary px-3"
-                    >IoT Ecosystem</span
-                  >
-                </div>
-
-                <div class="card-text text-secondary mb-4 small">
-                  <p class="mb-3 text-dark fw-medium">
-                    An IoT ecosystem designed to minimize fish crop failure
-                    through real-time water quality monitoring.
-                  </p>
-                  <ul class="list-unstyled mb-0">
-                    <li class="mb-2 d-flex align-items-start">
-                      <span class="me-2 text-primary">•</span>
-                      <span
-                        >Managed with <strong>Agile Scrum</strong> for iterative
-                        and timely feature delivery.</span
-                      >
-                    </li>
-                    <li class="mb-2 d-flex align-items-start">
-                      <span class="me-2 text-primary">•</span>
-                      <span
-                        >Architected a modular <strong>NestJS</strong> backend
-                        with <strong>MQTT</strong> for low-latency
-                        transmission.</span
-                      >
-                    </li>
-                    <li class="d-flex align-items-start">
-                      <span class="me-2 text-primary">•</span>
-                      <span
-                        >Developed multi-platform interfaces using
-                        <strong>Next.js</strong> and
-                        <strong>React Native</strong>.</span
-                      >
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="mt-auto d-grid gap-2">
-                  <div class="d-flex gap-2">
-                    <a
-                      href="https://github.com/orgs/iot-bridge-repository/repositories"
-                      target="_blank"
-                      class="btn btn-outline-dark btn-sm w-100 fw-medium"
-                    >
-                      <i class="bi bi-github"></i> Repository
-                    </a>
-                    <a
-                      href="https://iot-bridge-frontend.vercel.app"
-                      target="_blank"
-                      class="btn btn-dark btn-sm w-100 fw-medium"
-                    >
-                      Website
-                    </a>
-                  </div>
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.milano.sheva.iotbridgemobile"
-                    target="_blank"
-                    class="btn btn-primary btn-sm fw-medium"
-                  >
-                    <i class="bi bi-google-play"></i> Google Play Store
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- MQTT Link -->
-          <div class="col-md-6 col-lg-4">
-            <div
-              class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden"
-            >
-              <div
-                class="p-4 bg-light d-flex align-items-center justify-content-center"
-                style="height: 180px"
-              >
-                <img
-                  src="img/MQTT-Link.png"
-                  alt="MQTT Link Thumbnail"
-                  class="img-fluid"
-                  style="max-height: 140px; object-fit: contain"
-                />
-              </div>
-
-              <div class="card-body d-flex flex-column p-4">
-                <h4 class="card-title fw-bold text-dark mb-1">MQTT Link</h4>
-                <div class="mb-3">
-                  <span
-                    class="badge rounded-pill bg-primary bg-opacity-10 text-primary px-3"
-                    >Developer Tool</span
-                  >
-                  <span
-                    class="badge rounded-pill bg-success bg-opacity-10 text-success px-3"
-                    >Published</span
-                  >
-                </div>
-
-                <div class="card-text text-secondary mb-4 small">
-                  <p class="mb-3 text-dark fw-medium">
-                    A professional mobile utility designed for developers to
-                    manage and validate MQTT communications.
-                  </p>
-                  <ul class="list-unstyled mb-0">
-                    <li class="mb-2 d-flex align-items-start">
-                      <span class="me-2 text-primary">•</span>
-                      <span
-                        >Features <strong>Publish-Subscribe</strong> and dynamic
-                        broker connection management.</span
-                      >
-                    </li>
-                    <li class="mb-2 d-flex align-items-start">
-                      <span class="me-2 text-primary">•</span>
-                      <span
-                        >Streamlines <strong>IoT debugging</strong> with
-                        real-time status monitoring.</span
-                      >
-                    </li>
-                    <li class="d-flex align-items-start">
-                      <span class="me-2 text-primary">•</span>
-                      <span
-                        >Developed with <strong>React Native (Expo)</strong> and
-                        published on <strong>Google Play Store</strong>.</span
-                      >
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="mt-auto d-grid gap-2">
-                  <div class="d-flex gap-2">
-                    <a
-                      href="https://play.google.com/store/apps/details?id=com.valentinovsoftware.mqttlink"
-                      target="_blank"
-                      class="btn btn-primary btn-sm w-100 fw-medium"
-                    >
-                      <i class="bi bi-google-play"></i> Play Store
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div
-              class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden"
-            >
-              <div
-                class="p-4 bg-light d-flex align-items-center justify-content-center"
-                style="height: 180px"
-              >
-                <img
-                  src="img/n8n.png"
-                  alt="Autonomous Newsroom Thumbnail"
-                  class="img-fluid"
-                  style="max-height: 140px; object-fit: contain"
-                />
-              </div>
-
-              <div class="card-body d-flex flex-column p-4">
-                <h4 class="card-title fw-bold text-dark mb-1">
-                  Autonomous Economic Newsroom
-                </h4>
-
-                <div class="mb-3">
-                  <span
-                    class="badge rounded-pill bg-warning bg-opacity-10 text-warning px-3"
-                    >AI Automation</span
-                  >
-                  <span
-                    class="badge rounded-pill bg-info bg-opacity-10 text-info px-3"
-                    >In Progress</span
-                  >
-                </div>
-
-                <div class="card-text text-secondary mb-4 small">
-                  <p class="mb-3 text-dark fw-medium">
-                    An automated news production system that generates and
-                    publishes economic insights to social media platforms.
-                  </p>
-
-                  <ul class="list-unstyled mb-0">
-                    <li class="mb-2 d-flex align-items-start">
-                      <span class="me-2 text-primary">•</span>
-                      <span
-                        >Orchestrating complex workflows using
-                        <strong>n8n</strong> to fetch, analyze, and summarize
-                        global economic data.</span
-                      >
-                    </li>
-                    <li class="mb-2 d-flex align-items-start">
-                      <span class="me-2 text-primary">•</span>
-                      <span
-                        >Integrating
-                        <strong>Large Language Models (LLM)</strong> for
-                        automated content generation tailored for
-                        <strong>X (Twitter)</strong> and
-                        <strong>Instagram</strong>.</span
-                      >
-                    </li>
-                    <li class="d-flex align-items-start">
-                      <span class="me-2 text-primary">•</span>
-                      <span
-                        >Developing automated scheduling and multi-platform
-                        distribution pipelines to ensure 24/7 news
-                        delivery.</span
-                      >
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="mt-auto d-grid gap-2">
-                  <button
-                    class="btn btn-outline-secondary btn-sm w-100 fw-medium"
-                    disabled
-                  >
-                    <i class="bi bi-code-slash"></i> Coming Soon on
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="nn p-4 text-center">
-                <h5 class="pb-2 ls-2">
-                  All my projects are available in My GitHub Repositories
-                </h5>
-                <p class="text-body-tertiary">
-                  <a
-                    href="https://github.com/valentinov8060?tab=repositories"
-                    target="blank"
-                  >
-                    My GitHub Repositories
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ----------------------------Portfolio section ends here------------------------ -->
-
-    <section id="contact" class="page-section">
-      <div class="mm2">
-        <div class="text-center">
-          <h3 class="text-uppercase fw-900 display-4 pb-2">Get In Touch</h3>
-        </div>
-        <div class="text-center">
-          <p class="lead">Please contact me :)</p>
-        </div>
-        <div class="container text-center">
-          <div class="row justify-content-md-center">
-            <div class="col-md-6 col-xl-4 aos-init aos-animate mb-3">
-              <a
-                href="https://www.linkedin.com/in/bill-valentinov-42a8a4250/"
-                target="_blank"
-                class="btn btn-outline-primary py-3 px-5"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-linkedin"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
-                  />
-                </svg>
-                <span class="ps-2">Linkedin</span>
-              </a>
-            </div>
-
-            <div class="col-md-6 col-xl-4 aos-init aos-animate mb-3">
-              <a
-                href="https://www.instagram.com/valentinov8060/"
-                target="_blank"
-                class="btn btn-outline-dark py-3 px-5"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-instagram"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
-                  />
-                </svg>
-                <span class="ps-2">Instagram</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ----------------------------Contact section ends here------------------------ -->
-
-    <footer class="bg-dark">
-      <div class="container">
-        <div class="row py-5">
-          <div class="col-lg-4">
-            <ul class="list-unstyled text-white pt-2 mb-0">
-              <li class="py-1 d-flex align-items-center">
-                <a
-                  href="https://www.instagram.com/valentinov8060/"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="link-light d-flex align-items-center"
-                >
-                  <i class="lni lni-instagram"></i>
-                  <span class="ps-2"> valentinov8060 </span>
-                </a>
-              </li>
-              <li class="py-1 d-flex align-items-center">
-                <a
-                  href="mailto:valentinovbill0@gmail"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="link-light d-flex align-items-center"
-                >
-                  <i class="lni lni-envelope"></i>
-                  <span class="ps-2"> valentinovbill0@gmail.com </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-4">
-            <ul class="list-unstyled text-white pt-2 mb-0">
-              <li class="py-1">
-                <a
-                  href="https://www.linkedin.com/in/bill-valentinov-42a8a4250/"
-                  target="_blank"
-                  class="link-light d-flex align-items-center"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-linkedin"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
-                    />
-                  </svg>
-                  <span class="ps-2">Bill Valentinov</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-4">
-            <p class="text-white pt-3 mb-0 d-flex align-items-center">
-              <span class="pe-2">I Would Love to Work With You</span>
-              <i class="lni lni-heart"></i>
+            <h3 class="project-title">IoT Bridge</h3>
+            <p class="project-desc">
+              An IoT ecosystem designed to minimize fish crop failure through
+              real-time water quality monitoring • Managed with Agile Scrum for
+              iterative and timely feature delivery • Architected a modular
+              NestJS backend with MQTT for low-latency transmission • Developed
+              multi-platform interfaces using Next.js and React Native.
             </p>
           </div>
-        </div>
-        <div class="row border-top pb-5">
-          <div class="col-lg-6">
-            <p class="mt-3 mb-0 text-white d-lg-inline-block text-center">
-              Template has been designed by
-              <a
-                class="link-light"
-                href="https://bootstraplily.com/"
-                target="_blank"
-                >Bootstraplily</a
-              >
+        </a>
+
+        <!-- Project 2 -->
+        <a
+          href="https://play.google.com/store/apps/details?id=com.valentinovsoftware.mqttlink&pcampaignid=web_share"
+          target="_blank"
+          class="project-card-link"
+        >
+          <div class="project-card reveal" style="transition-delay: 0.1s">
+            <div class="project-num">02</div>
+            <div class="project-arrow">↗</div>
+            <div class="project-tags">
+              <span class="tag accent">Mobile</span>
+              <span class="tag">React Native</span>
+              <span class="tag">Expo</span>
+              <span class="tag">MQTT</span>
+            </div>
+            <h3 class="project-title">MQTT Link</h3>
+            <p class="project-desc">
+              A professional mobile utility designed for developers to manage
+              and validate MQTT communications • Features Publish-Subscribe and
+              dynamic broker connection management • Streamlines IoT debugging
+              with real-time status monitoring • Developed with React Native
+              (Expo) and published on Google Play Store.
             </p>
           </div>
-          <div class="col-lg-6 text-lg-end text-center">
-            <a href="#home" class="mt-3 d-inline-block text-white"
-              >Back To Top</a
+        </a>
+
+        <!-- Project 3 -->
+        <a
+          href="https://nolayer.store"
+          target="_blank"
+          class="project-card-link"
+        >
+          <div class="project-card reveal">
+            <div class="project-num">03</div>
+            <div class="project-arrow">↗</div>
+            <div class="project-tags">
+              <span class="tag accent">Automation</span>
+              <span class="tag">N8N</span>
+            </div>
+            <h3 class="project-title">NoLayer</h3>
+            <p class="project-desc">In Progress...</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills-section" id="skills">
+      <div class="section-header reveal">
+        <div>
+          <p class="section-label">// Expertise</p>
+          <h2 class="section-title">Tech Stack</h2>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-item reveal">
+          <div class="skill-icon">⚛</div>
+          <div class="skill-name">Frontend</div>
+          <div class="skill-desc">React, Next.js</div>
+        </div>
+        <div class="skill-item reveal" style="transition-delay: 0.05s">
+          <div class="skill-icon">⚙</div>
+          <div class="skill-name">Backend</div>
+          <div class="skill-desc">Node.js, Express, NestJS, REST</div>
+        </div>
+        <div class="skill-item reveal" style="transition-delay: 0.1s">
+          <div class="skill-icon">🗄</div>
+          <div class="skill-name">Database</div>
+          <div class="skill-desc">PostgreSQL, MongoDB, MySQL</div>
+        </div>
+        <div class="skill-item reveal" style="transition-delay: 0.15s">
+          <div class="skill-icon">☁</div>
+          <div class="skill-name">DevOps</div>
+          <div class="skill-desc">Docker, CI/CD, VPS, Nginx</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="contact-inner">
+        <div class="reveal">
+          <p class="section-label">// Get In Touch</p>
+          <h2 class="contact-heading">
+            Let's<br />Work<br /><span>Together.</span>
+          </h2>
+          <p class="contact-sub">
+            I'm open to freelance projects, full-time roles, or just a chat
+            about tech. Feel free to reach out!
+          </p>
+        </div>
+
+        <div class="reveal" style="transition-delay: 0.2s">
+          <div class="contact-links">
+            <a href="mailto:valentinovbill0@gmail.com" class="contact-link">
+              <div>
+                <div class="contact-link-label">Email</div>
+                <div class="contact-link-sub">valentinovbill0@gmail.com</div>
+              </div>
+              <span class="contact-link-arrow">↗</span>
+            </a>
+            <a
+              href="https://github.com/valentinov8060"
+              class="contact-link"
+              target="_blank"
             >
+              <div>
+                <div class="contact-link-label">GitHub</div>
+                <div class="contact-link-sub">github.com/valentinov8060</div>
+              </div>
+              <span class="contact-link-arrow">↗</span>
+            </a>
+            <a
+              href="https://linkedin.com/in/bill-valentinov-42a8a4250"
+              class="contact-link"
+              target="_blank"
+            >
+              <div>
+                <div class="contact-link-label">LinkedIn</div>
+                <div class="contact-link-sub">
+                  linkedin.com/in/bill-valentinov
+                </div>
+              </div>
+              <span class="contact-link-arrow">↗</span>
+            </a>
+            <a
+              href="https://twitter.com/VALENTI43276466"
+              class="contact-link"
+              target="_blank"
+            >
+              <div>
+                <div class="contact-link-label">Twitter / X</div>
+                <div class="contact-link-sub">@VALENTI43276466</div>
+              </div>
+              <span class="contact-link-arrow">↗</span>
+            </a>
+            <a
+              href="https://threads.com/@valentinov8060"
+              class="contact-link"
+              target="_blank"
+            >
+              <div>
+                <div class="contact-link-label">Threads</div>
+                <div class="contact-link-sub">@valentinov8060</div>
+              </div>
+              <span class="contact-link-arrow">↗</span>
+            </a>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <span>© 2026 — Bill Valentinov</span>
+      <span>Designed & Built ♥ by Claude Ai</span>
+      <span>v1.0.0</span>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kingstudio.ro/demos/mipo/assets/js/typewriter.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="js/simple-lightbox.jquery.js"></script>
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
